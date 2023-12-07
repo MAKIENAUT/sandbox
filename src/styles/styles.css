@@ -67,16 +67,35 @@ nav {
             background-color: rgb(0, 77, 77);
          }
 
-         .DropdownContainer {
+         .DropdownContainerProcess.active {
+            color: white;
+            background-color: rgb(0, 77, 77);
+         }
+         .DropdownContainerProcess.active .PageLink{
+            color: white;
+            background-color: rgb(0, 77, 77);
+         }
+
+         .DropdownContainerApplicants.active {
+            color: white;
+            background-color: rgb(0, 77, 77);
+         }
+         .DropdownContainerApplicants.active .PageLink{
+            color: white;
+            background-color: rgb(0, 77, 77);
+         }
+
+         .DropdownContainerProcess,
+         .DropdownContainerApplicants {
             width: fit-content;
             position: relative;
 
             display: flex;
             flex-direction: column;
          }
-            .DropdownContent {
-               left: -20%;
-               bottom: -187px;
+            .DropdownContentProcess {
+               left: -13%;
+               bottom: -188px;
                
                width: fit-content;
                position: absolute;
@@ -85,7 +104,17 @@ nav {
                display: flex;
                flex-direction: column;
             }
+            .DropdownContentApplicants {
+               left: -10px;
+               bottom: -188px;
+               
+               width: 130px;
+               position: absolute;
 
+               gap: 1px;
+               display: flex;
+               flex-direction: column;
+            }
                .DropdownLink {
                   padding: 10px;
                   color: white;
