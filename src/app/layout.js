@@ -5,11 +5,7 @@ export const metadata = {
   description: 'West Migration Agency LLC (“WMA”)',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
@@ -17,5 +13,7 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }
+
+export default RootLayout;
